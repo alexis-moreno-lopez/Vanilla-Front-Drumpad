@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./exo_1.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>DRUM PAD</h1>
+    <div class="pad">
+      <div data-key="65" class="key" id="carteA">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="90 " class="key" id="carteZ">
+        <kbd>Z</kbd>
+        <span class="sound">HIHAT</span>
+      </div>
+      <div data-key="69" class="key" id="carteE">
+        <kbd>E</kbd>
+        <span class="sound">KICK</span>
+      </div>
+      <div data-key="81" class="key" id="carteQ">
+        <kbd>Q</kbd>
+        <span class="sound">OPENHAT</span>
+      </div>
+      <div data-key="83" class="key" id="carteS">
+        <kbd>S</kbd>
+        <span class="sound">BOOM</span>
+      </div>
+      <div data-key="68" class="key" id="carteD">
+        <kbd>D</kbd>
+        <span class="sound">RIDE</span>
+      </div>
+      <div data-key="87" class="key" id="carteW">
+        <kbd>W</kbd>
+        <span class="sound">SNARE</span>
+      </div>
+      <div data-key="88" class="key" id="carteX">
+        <kbd>X</kbd>
+        <span class="sound">TOM</span>
+      </div>
+      <div data-key="67" class="key" id="carteC">
+        <kbd>C</kbd>
+        <span class="sound">TINK</span>
+      </div>
+      <!-- Générer les 8 boxes restantes correspondant aux fichiers audio à jouer -->
+    </div>
+    <!-- Audio source -->
+    <audio data-key="65" id="prem" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/clap.wav"></audio>
+    <audio data-key="90" id="sec"src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/hihat.wav"></audio>
+    <audio data-key="69" id="tro" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/kick.wav"></audio>
+    <audio data-key="81" id="qua" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/openhat.wav"></audio>
+    <audio data-key="83" id="cinq" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/boom.wav"></audio>
+    <audio data-key="68" id="six" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/ride.wav"></audio>
+    <audio data-key="87" id="sep" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/snare.wav"></audio>
+    <audio data-key="88" id="hui" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tom.wav"></audio>
+    <audio data-key="67" id="neu" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/tink.wav"></audio>
+
+
+    <script src="./exo_1.js"></script>
+</body>
+</html>
